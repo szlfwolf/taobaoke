@@ -1,0 +1,104 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    title Document
+    meta(name='viewport', content='width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    link(rel='stylesheet', href='css/amazeui.min.css')
+    link(rel='stylesheet', href='css/petshow.css?6')
+    link(rel='stylesheet', href='css/animate.min.css')
+    script(src='js/jquery.min.js')
+    script(src='js/amazeui.min.js')
+    script(src='js/countUp.min.js')
+    script(src='js/amazeui.lazyload.min.js')
+  body
+    header.am-topbar.am-topbar-inverse
+      .amz-container
+        h1.am-topbar-brand
+          a.am-topbar-logo(href='#')
+            img(src='img/logo.png?1', alt='')
+        button.am-topbar-btn.am-topbar-toggle.am-btn.am-btn-sm.am-btn-success.am-show-sm-only(data-am-collapse="{target: '#doc-topbar-collapse-5'}")
+          span.am-sr-only
+            | 导航切换
+          span.am-icon-bars
+        #doc-topbar-collapse-5.am-collapse.am-topbar-collapse
+          ul.am-nav.am-nav-pills.am-topbar-nav
+            li.am-active
+              a(href='/')
+                | 首页
+            li.am-dropdown(data-am-dropdown='')
+              a.am-dropdown-toggle(data-am-dropdown-toggle='', href='javascript:;')
+                | 发现萌宠
+                span.am-icon-caret-down
+              ul.am-dropdown-content
+                li
+                  a(href='#')
+                    | 编辑推荐
+                li
+                  a(href='#')
+                    | 人气排行
+                li
+                  a(href='#')
+                    | 最新发布
+                li
+                  a(href='#')
+                    | 语音涂鸦
+            li
+              a(href='/newslist')
+                | 萌宠趣闻
+            li
+              a(href='/topiclist')
+                | 萌宠专题
+            li.am-dropdown(data-am-dropdown='')
+              a.am-dropdown-toggle(data-am-dropdown-toggle='', href='javascript:;')
+                | 萌宠服务
+                span.am-icon-caret-down
+              ul.am-dropdown-content
+                li
+                  a(href='#')
+                    | 宠物医院
+                li
+                  a(href='#')
+                    | 宠物美容
+                li
+                  a(href='#')
+                    | 宠物店铺
+                li
+                  a(href='#')
+                    | 更多服务
+    block content
+    footer.am_footer
+      .am_footer_con
+        .am_footer_link
+          span 关于宠物秀
+          ul
+            li
+              a(href='###') 关于我们
+            li
+              a(href='###') 发展历程
+            li
+              a(href='###') 友情链接
+        .am_footer_don
+          span 宠物秀
+          dl
+            dt
+              img(src='img/footdon.png?1', alt='')
+            dd
+              | 一起Show我们的爱宠吧！宠物秀是图片配文字、涂鸦、COSPLAY的移动手机社区，这里有猫狗鱼龟兔子仓鼠龙猫等各种萌图。
+              a.footdon_pg(href='###')
+                .foot_d_pg.am-icon-apple  App store
+              a.footdon_az.animated(href='###')
+                .foot_d_az.am-icon-android  Android
+        .am_footer_erweima
+          .am_footer_weixin
+            img(src='img/wx.jpg', alt='')
+            .am_footer_d_gzwx.am-icon-weixin  关注微信
+          .am_footer_ddon
+            img(src='img/wx.jpg', alt='')
+            .am_footer_d_dxz.am-icon-cloud-download  扫码下载
+      .am_info_line
+        | Copyright(c)2015 
+        span PetShow
+        |  All Rights Reserved
+    
