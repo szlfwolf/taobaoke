@@ -8,12 +8,10 @@ html(lang='en')
     link(rel='stylesheet', href='css/amazeui.min.css')
     link(rel='stylesheet', href='css/petshow.css?6')
     link(rel='stylesheet', href='css/animate.min.css')
-    script(src='js/jquery.min.js')
-    script(src='js/amazeui.min.js')
-    script(src='js/countUp.min.js')
-    script(src='js/amazeui.lazyload.min.js')
+    script(src='js/jquery.min.js')    
+    script(src='js/amazeui.min.js')        
   body
-    header.am-topbar.am-topbar-inverse
+    header.am-topbar.am-topbar-inverse.am-header-fixed
       .amz-container
         h1.am-topbar-brand
           a.am-topbar-logo(href='#')
@@ -67,9 +65,9 @@ html(lang='en')
                 li
                   a(href='#')
                     | 更多服务
-    block content
+    block content    
     footer.am_footer
-      .am_footer_con
+      .am_footer_con#my-scrollspy
         .am_footer_link
           span 关于宠物秀
           ul
@@ -101,4 +99,8 @@ html(lang='en')
         | Copyright(c)2015 
         span PetShow
         |  All Rights Reserved
+    script(src='js/amazeui.lazyload.min.js')    
+    script(src='js/app.js')    
+    
+
     

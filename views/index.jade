@@ -2,20 +2,19 @@ extends layout
 
 block content
   .get
-        .am-g
-          .am-u-lg-12
-            .get-title
-              .get_font_left
-                img(src='img/font_yjy.png', alt='')
-              #banner_num.get_font_center
-              .get_font_rigth
-                img(src='img/font_zty.png', alt='')
-            .font_line
-              img(src='img/font_line.png', alt='')
-            p
-              a.am-btn.am-btn-sm.get-btn.am-radius.banner_ios.am-icon-apple(href='###')  App store
-              a.am-btn.am-btn-sm.am-radius.get-btn.banner_android.am-icon-android(href='###')  Android            
-
+    .am-g
+      .am-u-lg-12
+        .get-title
+          .get_font_left
+            img(src='img/font_yjy.png', alt='')
+          #banner_num.get_font_center
+          .get_font_rigth
+            img(src='img/font_zty.png', alt='')
+        .font_line
+          img(src='img/font_line.png', alt='')
+        p
+          a.am-btn.am-btn-sm.get-btn.am-radius.banner_ios.am-icon-apple(href='###')  App store
+          a.am-btn.am-btn-sm.am-radius.get-btn.banner_android.am-icon-android(href='###')  Android            
   .banner_navbg
       .am-g
         .banner_nav
@@ -147,3 +146,5 @@ block content
               img(src='img/tx.jpg', alt='')
             span.am_imglist_user_font 路见不平Eason吼
   script(src='js/petshow.js')
+  script(src='js/countUp.min.js')
+    
