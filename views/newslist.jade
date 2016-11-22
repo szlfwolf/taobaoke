@@ -13,201 +13,69 @@ block content
         .am-tab-panel.am-active(data-tab-panel-0='')
           .am-list-news-bd.am_news_list_all
             ul.am-list
-              // 缩略图在标题左边
-              li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
-                .am-u-sm-3.am-list-thumb.am_list_thumb
-                  a(href='/news')
-                    img.am_news_list_img(src='img/c.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
-                .am-u-sm-9.am-list-main.am_list_main
-                  h3.am-list-item-hd.am_list_title
-                    a(href='###') 你知道怎么辨别优秀的秋田犬幼犬吗？
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
-              li.am-g.am-list-item-desced.am_list_li
-                .am-list-main
-                  h3.am-list-item-hd.am_list_title.am_list_title_s
-                    a(href='###') “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text
-                    | 还在苦恼圣诞礼物再也玩儿不出新意？快来抢2013最炫彩的跨国圣诞礼物！【参与方式】1.关注“UniqueWay无二之旅”豆瓣品牌小站http://brand.douban.com/uniqueway/2.上传一张**本人**在旅行中色彩最浓郁、最丰富的照片（色彩包含取景地、周边事物、服装饰品、女生彩妆等等，发挥你们无穷的创意想象力哦！^^）一定要有本人出现喔！3.
-                    | 在照片下方，附上一句旅行宣言作为照片说明。 成功参与活动！* 听他们刚才说，上传照片的次
-              li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
-                .am-u-sm-3.am-list-thumb.am_list_thumb
-                  a(href='###')
-                    img.am_news_list_img(src='img/y.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
-                .am-u-sm-9.am-list-main.am_list_main
-                  h3.am-list-item-hd.am_list_title
-                    a(href='###') 众包解决方案物流平台“我快到”：最后3公里的外卖配送应该外包出去
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
-              li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
-                .am-u-sm-3.am-list-thumb.am_list_thumb
-                  a(href='###')
-                    img.am_news_list_img(src='img/d.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
-                .am-u-sm-9.am-list-main.am_list_main
-                  h3.am-list-item-hd.am_list_title
-                    a(href='###') 哈佛大学公开课:公正-该如何做是好?
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
+             -var list = new Array(2)               
+              each val,i in list
+                // 缩略图在标题左边
+                li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
+                  .am-u-sm-3.am-list-thumb.am_list_thumb
+                    a(href='/news')
+                      img.am_news_list_img(src='img/c.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
+                  .am-u-sm-9.am-list-main.am_list_main
+                    h3.am-list-item-hd.am_list_title
+                      a(href='###') 你知道怎么辨别优秀的秋田犬幼犬吗？[#{i+1}]
+                    .am_list_author
+                      a(href='javascript:void(0)')
+                        span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
+                        span.name Okaeri
+                      span.am_news_time
+                        | • 
+                        time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
+                    .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
+                li.am-g.am-list-item-desced.am_list_li
+                  .am-list-main
+                    h3.am-list-item-hd.am_list_title.am_list_title_s
+                      a(href='###') “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
+                    .am_list_author
+                      a(href='javascript:void(0)')
+                        span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
+                        span.name Okaeri
+                      span.am_news_time
+                        | • 
+                        time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
+                    .am-list-item-text.am_list_item_text
+                      | 还在苦恼圣诞礼物再也玩儿不出新意？快来抢2013最炫彩的跨国圣诞礼物！【参与方式】1.关注“UniqueWay无二之旅”豆瓣品牌小站http://brand.douban.com/uniqueway/2.上传一张**本人**在旅行中色彩最浓郁、最丰富的照片（色彩包含取景地、周边事物、服装饰品、女生彩妆等等，发挥你们无穷的创意想象力哦！^^）一定要有本人出现喔！3.
+                      | 在照片下方，附上一句旅行宣言作为照片说明。 成功参与活动！* 听他们刚才说，上传照片的次
+                li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
+                  .am-u-sm-3.am-list-thumb.am_list_thumb
+                    a(href='###')
+                      img.am_news_list_img(src='img/y.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
+                  .am-u-sm-9.am-list-main.am_list_main
+                    h3.am-list-item-hd.am_list_title
+                      a(href='###') 众包解决方案物流平台“我快到”：最后3公里的外卖配送应该外包出去
+                    .am_list_author
+                      a(href='javascript:void(0)')
+                        span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
+                        span.name Okaeri
+                      span.am_news_time
+                        | • 
+                        time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
+                    .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
+                li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
+                  .am-u-sm-3.am-list-thumb.am_list_thumb
+                    a(href='###')
+                      img.am_news_list_img(src='img/d.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
+                  .am-u-sm-9.am-list-main.am_list_main
+                    h3.am-list-item-hd.am_list_title
+                      a(href='###') 哈佛大学公开课:公正-该如何做是好?
+                    .am_list_author
+                      a(href='javascript:void(0)')
+                        span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
+                        span.name Okaeri
+                      span.am_news_time
+                        | • 
+                        time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
+                    .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
             .am_news_load
               span
                 i.am-icon-spinner.am-icon-spin
-                |  更多萌宠照片
-        .am-tab-panel(data-tab-panel-1='')
-          .am-list-news-bd.am_news_list_all
-            ul.am-list
-              // 缩略图在标题左边
-              li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
-                .am-u-sm-3.am-list-thumb.am_list_thumb
-                  a(href='###')
-                    img.am_news_list_img(src='img/c.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
-                .am-u-sm-9.am-list-main.am_list_main
-                  h3.am-list-item-hd.am_list_title
-                    a(href='###') 你知道怎么辨别优秀的秋田犬幼犬吗？
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
-              li.am-g.am-list-item-desced.am_list_li
-                .am-list-main
-                  h3.am-list-item-hd.am_list_title.am_list_title_s
-                    a(href='###') “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text
-                    | 还在苦恼圣诞礼物再也玩儿不出新意？快来抢2013最炫彩的跨国圣诞礼物！【参与方式】1.关注“UniqueWay无二之旅”豆瓣品牌小站http://brand.douban.com/uniqueway/2.上传一张**本人**在旅行中色彩最浓郁、最丰富的照片（色彩包含取景地、周边事物、服装饰品、女生彩妆等等，发挥你们无穷的创意想象力哦！^^）一定要有本人出现喔！3.
-                    | 在照片下方，附上一句旅行宣言作为照片说明。 成功参与活动！* 听他们刚才说，上传照片的次
-              li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
-                .am-u-sm-3.am-list-thumb.am_list_thumb
-                  a(href='###')
-                    img.am_news_list_img(src='img/y.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
-                .am-u-sm-9.am-list-main.am_list_main
-                  h3.am-list-item-hd.am_list_title
-                    a(href='###') 众包解决方案物流平台“我快到”：最后3公里的外卖配送应该外包出去
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
-              li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
-                .am-u-sm-3.am-list-thumb.am_list_thumb
-                  a(href='###')
-                    img.am_news_list_img(src='img/d.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
-                .am-u-sm-9.am-list-main.am_list_main
-                  h3.am-list-item-hd.am_list_title
-                    a(href='###') 哈佛大学公开课:公正-该如何做是好?
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
-            .am_news_load
-              span
-                i.am-icon-spinner.am-icon-spin
-                |  更多萌宠照片
-        .am-tab-panel(data-tab-panel-2='')
-          .am-list-news-bd.am_news_list_all
-            ul.am-list
-              // 缩略图在标题左边
-              li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
-                .am-u-sm-3.am-list-thumb.am_list_thumb
-                  a(href='###')
-                    img.am_news_list_img(src='img/c.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
-                .am-u-sm-9.am-list-main.am_list_main
-                  h3.am-list-item-hd.am_list_title
-                    a(href='###') 那些动物的犀利眼神，仿佛看穿了我的内心
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
-              li.am-g.am-list-item-desced.am_list_li
-                .am-list-main
-                  h3.am-list-item-hd.am_list_title.am_list_title_s
-                    a(href='###') “你的旅行，是什么颜色？” 晒照片，换北欧梦幻极光之旅！
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text
-                    | 还在苦恼圣诞礼物再也玩儿不出新意？快来抢2013最炫彩的跨国圣诞礼物！【参与方式】1.关注“UniqueWay无二之旅”豆瓣品牌小站http://brand.douban.com/uniqueway/2.上传一张**本人**在旅行中色彩最浓郁、最丰富的照片（色彩包含取景地、周边事物、服装饰品、女生彩妆等等，发挥你们无穷的创意想象力哦！^^）一定要有本人出现喔！3.
-                    | 在照片下方，附上一句旅行宣言作为照片说明。 成功参与活动！* 听他们刚才说，上传照片的次
-              li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
-                .am-u-sm-3.am-list-thumb.am_list_thumb
-                  a(href='###')
-                    img.am_news_list_img(src='img/y.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
-                .am-u-sm-9.am-list-main.am_list_main
-                  h3.am-list-item-hd.am_list_title
-                    a(href='###') 众包解决方案物流平台“我快到”：最后3公里的外卖配送应该外包出去
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
-              li.am-g.am-list-item-desced.am-list-item-thumbed.am-list-item-thumb-left.am_list_li
-                .am-u-sm-3.am-list-thumb.am_list_thumb
-                  a(href='###')
-                    img.am_news_list_img(src='img/d.png', alt='我很囧，你保重....晒晒旅行中的那些囧！')
-                .am-u-sm-9.am-list-main.am_list_main
-                  h3.am-list-item-hd.am_list_title
-                    a(href='###') 哈佛大学公开课:公正-该如何做是好?
-                  .am_list_author
-                    a(href='javascript:void(0)')
-                      span.am_list_author_ico(style='background-image: url(img/tx.jpg);')
-                      span.name Okaeri
-                    span.am_news_time
-                      | • 
-                      time.timeago(title='2015-08-13 08:02:40 +0800', datetime='2015-08-13 08:02:40 +0800')  2 小时前
-                  .am-list-item-text.am_list_item_text 秋田犬是非常受欢迎的犬种之一，但是在饲养过程中可能会遇到一些难题。也许其他方面自己的爱犬都能配合，就是喂食的时候它表现出狗护食的欲望，让你无法接近。
-            .am_news_load
-              span
-                i.am-icon-spinner.am-icon-spin
-                |  更多萌宠照片
+                |  更多萌宠照片        
